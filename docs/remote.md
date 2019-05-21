@@ -8,6 +8,7 @@
   - [SCP](#scp)
   - [rsync](#rsync)
 
+
 ## SSH
 
 Secure Shell, or `SSH`, allows a communication between the local computer and a remote host. This connection is highly useful, as it can create remote shells, share files and create tcp tunnels between the two computers. The most basic command creates a remote shell:
@@ -64,4 +65,18 @@ scp your_username@remotehost.edu:foobar.txt /some/local/directory
 Further information about SCP can be found [here](http://www.hypexr.org/linux_scp_help.php).
 
 ## rsync
+
+Rsync, which stands for "remote sync", is a remote and local file synchronization tool. It uses an algorithm that minimizes the amount of data copied by only moving the portions of files that have changed. This can be useful during development to synchronize the code between the local computer (used for development) and the remote host (used for execution). For example, to synchronize two directories in the host/remote, we can use the command:
+
+```bash
+rsync -a username@remote_host:/home/username/dir1 place_to_sync_on_local_machine
+```
+
+Some useful options that can be used in this command is:
+
+* `--delete`. By default, the `rsync` does not delete any file. To force it to delete the files, if deleted, use this flag.
+* `-z`. Compresses the files for transfer. Can improve syncing times and bandwidth.
+* `-v`. Shows a verbose output, useful to inspect which files were sync'd.
+
+A further explanation can be found [here](https://www.digitalocean.com/community/tutorials/how-to-use-rsync-to-sync-local-and-remote-directories-on-a-vps).
 
