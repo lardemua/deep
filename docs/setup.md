@@ -1,5 +1,15 @@
 # Setup
 
+- [Setup](#setup)
+  - [Docker](#docker)
+  - [Podman](#podman)
+    - [Installation](#installation)
+    - [Testing](#testing)
+  - [NVIDIA container runtime](#nvidia-container-runtime)
+    - [Installation](#installation-1)
+    - [Test the system](#test-the-system)
+  - [FAQ](#faq)
+
 ## Docker
 
 Docker can be installed according to [here](https://docs.docker.com/install/linux/docker-ce/ubuntu/).
