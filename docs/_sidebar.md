@@ -1,5 +1,4 @@
 - Getting Started
-  - [Computer](computer.md)
   - [Setup](setup.md)
   - [Working Remotely](remote.md)
   - [Containers](containers.md)
@@ -8,4 +7,4 @@
   - [Serve This Docs](serve-this-docs.md)
   - [Flask Webapp](webapp.md)
   - [Processing Images With MATLAB](matlab-image-processing.md)
-
+  - [Pytorch and NVIDIA GPUs](pytorch-and-gpu.md)
