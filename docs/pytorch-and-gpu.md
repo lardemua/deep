@@ -79,6 +79,8 @@ podman run -p 8888:8888 fastai-course
 
 Now visit the webpage [localhost:8888](http://localhost:8888) and login to the jupyter lab (use the token shown in the shell).
 
+![jupyterlab](_images/jupyterlab.png)
+
 ## Check what processes are running
 
 ```
