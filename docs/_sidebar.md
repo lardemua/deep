@@ -5,4 +5,7 @@
   - [Containers](containers.md)
   - [Podman-CLI](podman-cli.md)
 - Hands On
+  - [Serve This Docs](serve-this-docs.md)
   - [Flask Webapp](webapp.md)
+  - [Processing Images With MATLAB](matlab-image-processing.md)
+
