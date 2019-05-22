@@ -13,7 +13,7 @@
 
 ## Overview
 
-This the main objective is to run a matlab script based on a work made in computer vision classes (TP1-2018). This work performs a segmentation of a series of images with barcodes and qr-codes and reads the number in the barcodes. The main components that are required to run the whole work are:
+In this hands-on tutorial, the main objective is to run a matlab script based on a work made in computer vision classes (TP1-2018). This work performs a segmentation of a series of images with barcodes and qr-codes and reads the number in the barcodes. The main components that are required to run the whole work are:
 
 * __The runtime__: in this work we used octave instead of matlab just because it is available on most linux distributions and is an open-source project.
 * __The scripts__: the collection of `*.m` scripts and functions required. They are all in the _src_ directory and the main entrypoint is the `main.m` file.

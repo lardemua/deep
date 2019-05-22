@@ -1,0 +1,7 @@
+jupyter
+jupyterlab
+matplotlib
+pillow
+pandas
+scikit-learn
+fastai
