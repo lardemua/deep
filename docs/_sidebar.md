@@ -4,7 +4,8 @@
   - [Containers](containers.md)
   - [Podman-CLI](podman-cli.md)
 - Hands On
-  - [Serve This Docs](serve-this-docs.md)
+  - [Pre-flight](preflight.md)
+  - [Serve This Docs](nginx-webpage.md)
   - [Flask Webapp](webapp.md)
   - [Processing Images With MATLAB](matlab-image-processing.md)
   - [Pytorch and NVIDIA GPUs](pytorch-and-gpu.md)

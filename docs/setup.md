@@ -1,36 +1,14 @@
 # Setup
 
 - [Setup](#setup)
-  - [Docker](#docker)
   - [Podman](#podman)
     - [Installation](#installation)
     - [Testing](#testing)
+  - [Docker (alternative)](#docker-alternative)
   - [NVIDIA container runtime](#nvidia-container-runtime)
     - [Installation](#installation-1)
     - [Test the system](#test-the-system)
   - [FAQ](#faq)
-
-## Docker
-
-Docker can be installed according to [here](https://docs.docker.com/install/linux/docker-ce/ubuntu/).
-
-Do not forget to enable/start the docker daemon and add yourself to the docker group, before starting to use docker:
-
-```bash
-# Start the docker daemon
-systemctl start docker
-# Enable the docker at startup
-systemctl enable docker
-# Add myself to the docker group
-usermod -aG docker $USER
-# Logoff/Login to take effect
-```
-
-Finally, test if everything is working with:
-
-```bash
-docker run --rm hello-world
-```
 
 ## Podman
 
@@ -41,10 +19,11 @@ Podman and buildah are two tools that aim to be a substitute for docker, with re
 See how to install pacman in [here](https://github.com/containers/libpod/blob/master/install.md). Or, in one line:
 
 ```
-add-apt-repository -y ppa:projectatomic/ppa && apt install podman buildah skopeo
+sudo add-apt-repository -y ppa:projectatomic/ppa
+sudo apt install podman buildah skopeo
 ```
 
-Add the configuration to the file `/etc/containers/registries.conf` (see [here](https://github.com/containers/libpod/blob/master/install.md#configuration-files)):
+Add the `docker.io` registry to the configuration in file `/etc/containers/registries.conf` as described in [here](https://github.com/containers/libpod/blob/master/install.md#configuration-files)). Replace the line 12 to:
 
 ```
 registries = ["docker.io"]
@@ -56,6 +35,30 @@ Thats it :ok_hand:.
 
 ```bash
 podman run --rm hello-world
+```
+
+## Docker (alternative)
+
+__ATTENTION__: Do not use docker unless you have a kernel version older than `4.10` (check with `uname -r`).
+
+Docker can be installed according to [here](https://docs.docker.com/install/linux/docker-ce/ubuntu/).
+
+Do not forget to enable/start the docker daemon and add yourself to the docker group, before starting to use docker:
+
+```bash
+# Start the docker daemon
+sudo systemctl start docker
+# Enable the docker at startup
+sudo systemctl enable docker
+# Add myself to the docker group
+sudo usermod -aG docker $USER
+# Logoff/Login to take effect
+```
+
+Finally, test if everything is working with:
+
+```bash
+docker run --rm hello-world
 ```
 
 ## NVIDIA container runtime
@@ -128,4 +131,12 @@ podman run --rm nvidia/cuda nvidia-smi
 ```
 
 ## FAQ
+
+> I have Docker but I want to copy-paste the examples.
+
+Just run `alias podman=docker` to alias podman to docker.
+
+> Docker containers does not have internet access.
+
+This could be a problem related to forwarding configuration of the network bridge created by docker. Use the flag `--network=host` to solve the problem.
 

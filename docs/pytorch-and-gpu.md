@@ -8,6 +8,7 @@
   - [Check what processes are running](#check-what-processes-are-running)
   - [Commit the container](#commit-the-container)
   - [Execute a new shell inside the container](#execute-a-new-shell-inside-the-container)
+  - [FAQ](#faq)
 
 ## Overview
 
@@ -100,3 +101,11 @@ podman commit <container> fastai-course-full
 ```
 podman exec -it <container> bash
 ```
+
+
+## FAQ
+
+> There is an error while executing some notebooks. The processes crash during training.
+
+This can be related to the shared memory default setting. Adding the option `--shm=host` should solve the issue.
+
