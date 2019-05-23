@@ -44,8 +44,14 @@ See how to install pacman in [here](https://github.com/containers/libpod/blob/ma
 add-apt-repository -y ppa:projectatomic/ppa && apt install podman buildah skopeo
 ```
 
-Thats it :ok_hand:.
+Add the configuration to the file `/etc/containers/registries.conf`:
 
+```
+[registries.search]
+registries = ["docker.io"]
+```
+
+Thats it :ok_hand:.
 
 ### Testing
 
