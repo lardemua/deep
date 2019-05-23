@@ -1,6 +1,6 @@
-# Beastmaster64
+# Deep@LAR
 
-- [Beastmaster64](#beastmaster64)
+- [Deep@LAR](#deeplar)
   - [The computer](#the-computer)
 
 LAR has a new computer crafted for deep learning, thanks to the amount of gpu power. This repository serves as a way to provide knowledge and examples on how to use this computer. Fell free to make suggestions and share ideas.
