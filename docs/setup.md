@@ -16,7 +16,7 @@ Podman and buildah are two tools that aim to be a substitute for docker, with re
 
 ### Installation
 
-See how to install pacman in [here](https://github.com/containers/libpod/blob/master/install.md). Or, in one line:
+See how to install podman in [here](https://github.com/containers/libpod/blob/master/install.md). Or, in one line:
 
 ```
 sudo add-apt-repository -y ppa:projectatomic/ppa
