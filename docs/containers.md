@@ -10,29 +10,29 @@
 
 ## What are containers
 
-![containers](_images/containers.jpg ':size=400px')
+![containers](_images/containers.jpg ":size=400px")
 
-Linux containers, in short, contain applications in a way that keep them isolated from the host that they run on. This is similar to applications running on virtual machines. They also allow applications to be packaged in *images* that contain the operating system, dependencies and configuration, so they are easy to deploy, distribute and develop.
+Linux containers, in short, contain applications in a way that keep them isolated from the host that they run on. This is similar to applications running on virtual machines. They also allow applications to be packaged in _images_ that contain the operating system, dependencies and configuration, so they are easy to deploy, distribute and develop.
 
-![](https://www.redhat.com/cms/managed-files/what-is-a-container.png ':size=300px')
+![](https://www.redhat.com/cms/managed-files/what-is-a-container.png ":size=300px")
 
 ## Why we want to use containers
 
-* Containers provide a similar isolation to virtual machines, but require much less overhead, which improves performance.
-* Containers are GPU-friendly.
-* Containers allow applications to be portable between systems.
-* Each developer/admin has full control of the container.
-* Containers allow easy management of resources, such as cpu quotas, memory and visible GPU devices.
-* Containers cannot tamper the underlying host system they run on.
+- Containers provide a similar isolation to virtual machines, but require much less overhead, which improves performance.
+- Containers are GPU-friendly.
+- Containers allow applications to be portable between systems.
+- Each developer/admin has full control of the container.
+- Containers allow easy management of resources, such as cpu quotas, memory and visible GPU devices.
+- Containers cannot tamper the underlying host system they run on.
 
 > In a nutshell: portability, configurability, and isolation
 
 ## Components
 
-As an overview, the container environment are made of 2 main components: 
+As an overview, the container environment are made of 2 main components:
 
-* Containers
-* Images
+- Containers
+- Images
 
 ### Images
 
@@ -50,8 +50,8 @@ The containers processes just like a normal process in the host machine, but the
 
 ## Further reading
 
-* [Opensource.com: What are linux containers](https://opensource.com/resources/what-are-linux-containers)
-* [Open Container Iniciative](https://www.opencontainers.org)
-* [RedHat: What are linux containers](https://www.redhat.com/en/topics/containers)
-* [Docker: What are docker containers](https://www.docker.com/resources/what-container)
-* [Podman and Buildah for docker users](https://developers.redhat.com/blog/2019/02/21/podman-and-buildah-for-docker-users/)
+- [Opensource.com: What are linux containers](https://opensource.com/resources/what-are-linux-containers)
+- [Open Container Iniciative](https://www.opencontainers.org)
+- [RedHat: What are linux containers](https://www.redhat.com/en/topics/containers)
+- [Docker: What are docker containers](https://www.docker.com/resources/what-container)
+- [Podman and Buildah for docker users](https://developers.redhat.com/blog/2019/02/21/podman-and-buildah-for-docker-users/)
