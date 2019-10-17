@@ -109,7 +109,7 @@ cd 01-cats-and-dogs
 Install the conda dependencies required:
 
 ```
-conda install jupyterlab numpy matplotlib pillow tqdm tabulate
+conda install jupyterlab numpy matplotlib pillow tqdm tabulate tensorflow-datasets
 ```
 
 ## Running and editing scripts (ol'way)
