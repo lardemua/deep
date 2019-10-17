@@ -11,7 +11,7 @@ In this hands on, we will create a simple [flask](http://flask.pocoo.org/) web a
 
 ## The flask application
 
-This flask application just serves a simple webpage on `localhost:4000`. It contains the hostname and the environment variable "$NAME".
+This flask application just serves a simple webpage on `localhost:4000`. It contains the hostname and the environment variable "\$NAME".
 
 ```py
 from flask import Flask
@@ -44,12 +44,12 @@ CMD ["python", "app.py"]
 
 Each command has the following explanation:
 
-* `FROM`: defines the base layer of the image, in this case, the `python:2.7` image, which can be found in [here](https://hub.docker.com/_/python). This is mandatory in every dockerfile and is required to be the first line. All further commands will add files or configuration to this base image
-* `WORKDIR`: defines the default path on the container.
-* `ADD`: copies files from the host to the container image.
-* `RUN`: runs commands in the container image. In this case `pip` to install all dependencies.
-* `ENV`: defines an environment variable that will be shown in the container. In this case, it will define "$NAME" to be "World" by default. This can be overridden at the start of the container
-* `CMD`: defines the default starting command when running the container. In this case, it will execute the `app.py` application. This can also be overriden when creating the container.
+- `FROM`: defines the base layer of the image, in this case, the `python:2.7` image, which can be found in [here](https://hub.docker.com/_/python). This is mandatory in every dockerfile and is required to be the first line. All further commands will add files or configuration to this base image
+- `WORKDIR`: defines the default path on the container.
+- `ADD`: copies files from the host to the container image.
+- `RUN`: runs commands in the container image. In this case `pip` to install all dependencies.
+- `ENV`: defines an environment variable that will be shown in the container. In this case, it will define "\$NAME" to be "World" by default. This can be overridden at the start of the container
+- `CMD`: defines the default starting command when running the container. In this case, it will execute the `app.py` application. This can also be overriden when creating the container.
 
 ## Build the image
 
@@ -108,4 +108,3 @@ podman push docker.io/<user>/webapp
 ```
 
 Now, your image is online like [mine](https://hub.docker.com/r/bernardomig/webapp)!
-

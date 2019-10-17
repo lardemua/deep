@@ -1,18 +1,22 @@
 # Serve a webpage with nginx
 
+- [Serve a webpage with nginx](#serve-a-webpage-with-nginx)
+  - [Searching for the nginx image](#searching-for-the-nginx-image)
+  - [Running a nginx container](#running-a-nginx-container)
+  - [Print the logs](#print-the-logs)
+  - [Stop/Start/Remove the container](#stopstartremove-the-container)
+
 Let's say we have a beautiful webpage written in html like the follow:
 
 ```html
 <html>
+  <head>
+    <title>The most useful webpage</title>
+  </head>
 
-    <head>
-        <title>The most useful webpage</title>
-    </head>
-
-    <body>
-        <h1>This is the nicest webpage I ever see.</h1>
-    </body>
-
+  <body>
+    <h1>This is the nicest webpage I ever see.</h1>
+  </body>
 </html>
 ```
 
@@ -40,10 +44,10 @@ Now we can see the documentation in [localhost:8080](http://localhost:8080)
 
 The flags used have the following explanation:
 
-* `-d`: detach from the current shell, running as a daemon. This has two effects: first, if we close the shell, the container will continue running; second, the output of the container will not be shown. We can see the logs using the `podman logs nginx-webpage` command.
-* `-p 8080:80`: map the host port 8080, to the port 80 in the container. The port 80 is the port used by nginx to listen to the http.
-* `-v $PWD/docs:/usr/share/nginx/html:ro`: map the docs directory in the host to the directory `/usr/share/nginx/html` in the container. This is directory where nginx expects the static files to be. The `:ro` options ensures that the directory is read-only inside the container.
-* `--name nginx-webpage`: gives the `nginx-webpage` name to the container.
+- `-d`: detach from the current shell, running as a daemon. This has two effects: first, if we close the shell, the container will continue running; second, the output of the container will not be shown. We can see the logs using the `podman logs nginx-webpage` command.
+- `-p 8080:80`: map the host port 8080, to the port 80 in the container. The port 80 is the port used by nginx to listen to the http.
+- `-v $PWD/docs:/usr/share/nginx/html:ro`: map the docs directory in the host to the directory `/usr/share/nginx/html` in the container. This is directory where nginx expects the static files to be. The `:ro` options ensures that the directory is read-only inside the container.
+- `--name nginx-webpage`: gives the `nginx-webpage` name to the container.
 
 ## Print the logs
 

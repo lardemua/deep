@@ -39,7 +39,7 @@ podman run --rm hello-world
 
 ## Docker (alternative)
 
-__ATTENTION__: Do not use docker unless you have a kernel version older than `4.10` (check with `uname -r`).
+**ATTENTION**: Do not use docker unless you have a kernel version older than `4.10` (check with `uname -r`).
 
 Docker can be installed according to [here](https://docs.docker.com/install/linux/docker-ce/ubuntu/).
 
@@ -139,4 +139,3 @@ Just run `alias podman=docker` to alias podman to docker.
 > Docker containers does not have internet access.
 
 This could be a problem related to forwarding configuration of the network bridge created by docker. Use the flag `--network=host` to solve the problem.
-

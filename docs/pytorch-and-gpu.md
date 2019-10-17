@@ -14,9 +14,9 @@
 
 In this hands-on tutorial, the objective is to run a container for AI with pytorch. The novelty is the use of graphics card, that are _injected_ into the container (the nvidia driver is). The principal components are:
 
-* A _JupyterLab_ server to interact with the notebooks.
-* A pytorch installation with cuda.
-* A set of example notebooks from the incredible _fastai_ [course](https://course.fast.ai/).
+- A _JupyterLab_ server to interact with the notebooks.
+- A pytorch installation with cuda.
+- A set of example notebooks from the incredible _fastai_ [course](https://course.fast.ai/).
 
 ## Setup
 
@@ -102,10 +102,8 @@ podman commit <container> fastai-course-full
 podman exec -it <container> bash
 ```
 
-
 ## FAQ
 
 > There is an error while executing some notebooks. The processes crash during training.
 
 This can be related to the shared memory default setting. Adding the option `--shm=host` should solve the issue.
-

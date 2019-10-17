@@ -136,14 +136,14 @@ podman run -it ubuntu
 
 The `run` command is very powerful, and can be greatly customized by it's option flags. The most useful and known ones are:
 
-* `--name`: sets the name of the container.
-* `--rm`: remove the container after it has stopped.
-* `-it`: attach a terminal to the container, in order to start an interactive container.
-* `-v`: maps a directory from the host to the container. For example: `-v ~/workspace/package1:/workspace/package1`.
-* `-p`: maps a port from the host to the container. For example: `-p 8080:80`.
-* `-e`: define a environment variable inside the container.
-* `-d`: run the container in background (detach from current terminal).
-* `--cpus`: define the number of cpus available in the container.
+- `--name`: sets the name of the container.
+- `--rm`: remove the container after it has stopped.
+- `-it`: attach a terminal to the container, in order to start an interactive container.
+- `-v`: maps a directory from the host to the container. For example: `-v ~/workspace/package1:/workspace/package1`.
+- `-p`: maps a port from the host to the container. For example: `-p 8080:80`.
+- `-e`: define a environment variable inside the container.
+- `-d`: run the container in background (detach from current terminal).
+- `--cpus`: define the number of cpus available in the container.
 
 ### Listing running container
 

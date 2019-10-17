@@ -3,6 +3,7 @@
   - [Working Remotely](remote.md)
   - [Containers](containers.md)
   - [Podman-CLI](podman-cli.md)
+  - [Miniconda](miniconda.md)
 - Hands On
   - [Pre-flight](preflight.md)
   - [Serve This Docs](nginx-webpage.md)
