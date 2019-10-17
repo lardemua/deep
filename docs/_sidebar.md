@@ -1,10 +1,13 @@
 - Getting Started
+  - [First Steps](first-steps.md)
+- Configuration
   - [Setup](setup.md)
   - [Working Remotely](remote.md)
+  - [Miniconda](miniconda.md)
+- Containers
   - [Containers](containers.md)
   - [Podman-CLI](podman-cli.md)
-  - [Miniconda](miniconda.md)
-- Hands On
+- Containers Hands On
   - [Pre-flight](preflight.md)
   - [Serve This Docs](nginx-webpage.md)
   - [Flask Webapp](webapp.md)
