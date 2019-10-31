@@ -1,6 +1,5 @@
 #!/usr/bin/env python
 
-
 # # Cats and dogs
 #
 # Transfer learning using mobilenetv2 and tensorflow
@@ -17,7 +16,7 @@ from tensorflow import keras
 # enable the eager execution on tensorflow v1
 tf.enable_eager_execution()
 
-#
+# %%
 # ## Dataset
 #
 #
@@ -55,7 +54,7 @@ train_batches = train.shuffle(SUFFLE_BUFFER_SIZE).batch(BATCH_SIZE)
 validation_batches = validation.shuffle(SUFFLE_BUFFER_SIZE).batch(BATCH_SIZE)
 test_batches = test.shuffle(SUFFLE_BUFFER_SIZE).batch(BATCH_SIZE)
 
-#
+# %%
 # ## Model
 #
 
@@ -95,7 +94,7 @@ print("initial model performance:")
 print("  loss: {:.2f}".format(loss))
 print("  accuracy: {:.2f}".format(accuracy))
 
-#
+# %%
 # Training
 #
 
@@ -108,7 +107,7 @@ print("  loss: {:.2f}".format(loss))
 print("  accuracy: {:.2f}".format(accuracy))
 
 
-#
+# %%
 # Model Saving
 #
 

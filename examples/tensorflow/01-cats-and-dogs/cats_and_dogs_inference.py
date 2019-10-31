@@ -44,8 +44,13 @@ def which_animal(prediction):
     else:
         return 'cat'
 
+import math
+
+def sigmoid(x):
+    return 1 / (1 + math.exp(-x))
+    
 results = [
-    { 'image': image, 'prediction': prediction, 'animal': which_animal(prediction) }
+    { 'image': image, 'prediction': sigmoid(prediction), 'animal': which_animal(prediction) }
     for image, prediction in  zip(args.images, predictions)
 ]
 
