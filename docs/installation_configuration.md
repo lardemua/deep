@@ -1,5 +1,20 @@
 # Installation and Configuration
 
+- [Installation and Configuration](#installation-and-configuration)
+  - [Operating System](#operating-system)
+  - [OS Installation](#os-installation)
+    - [Disk partitioning](#disk-partitioning)
+    - [Network Configuration](#network-configuration)
+    - [System update](#system-update)
+    - [Nvidia configuration](#nvidia-configuration)
+    - [SSH Server](#ssh-server)
+    - [Done](#done)
+  - [User Management](#user-management)
+    - [Creating a new user](#creating-a-new-user)
+    - [The root user and the admins](#the-root-user-and-the-admins)
+  - [Disk management](#disk-management)
+  - [The 2 2TB HDDS configuration](#the-2-2tb-hdds-configuration)
+
 This guide explains how the system was installed and configured the way it is now. It serves as a guideline for (maybe) next installations/updates and contains explanations on why is the system configured as it is.
 
 ## Operating System
