@@ -14,4 +14,4 @@
   - [Processing Images With MATLAB](matlab-image-processing.md)
   - [Pytorch and NVIDIA GPUs](pytorch-and-gpu.md)
 - Administration
-  - [Instalation and Configuration](instalation_configuration.md)
+  - [Instalation and Configuration](installation_configuration.md)
