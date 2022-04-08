@@ -1,0 +1,23 @@
+Maintenance operations as root in deeplar
+=========================================
+
+Date: 4 Apr 2022, vitor@ua.pt
+-----------------------------
+
+* Reset mike password
+
+* Installed docker as root
+* Followed instructions from: https://en.opensuse.org/Docker
+** sudo zypper install docker python3-docker-compose
+** sudo systemctl enable docker
+** sudo usermod -G docker -a $USER
+** sudo systemctl restart docker
+** Found this error:
+Got permission denied while trying to connect to the Docker daemon socket at unix:///var/run/docker.sock: Get "http://%2Fvar%2Frun%2Fdocker.sock/v1.24/version":
+ dial unix /var/run/docker.sock: connect: permission denied
+
+* So, following the instructionss of 
+https://www.digitalocean.com/community/questions/how-to-fix-docker-got-permission-denied-while-trying-to-connect-to-the-docker-daemon-socket
+* did the following:
+** sudo chmod 666 /var/run/docker.sock
+* Edited /etc/group and added mike, DanielCoelho11 and pazevedo to docker group
