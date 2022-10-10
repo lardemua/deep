@@ -21,3 +21,13 @@ https://www.digitalocean.com/community/questions/how-to-fix-docker-got-permissio
 * did the following:
 ** sudo chmod 666 /var/run/docker.sock
 * Edited /etc/group and added mike, DanielCoelho11 and pazevedo to docker group
+
+Date: 10 Oct 2022, danielsilveiracoelho@ua.pt
+-----------------------------
+
+* Due to the problem described in issue #6 and #7, I run the following command:
+** sudo systemctl enable nvidia-persistenced
+* and also updated OpenSuse sofware with:
+** sudo zypper refresh
+** sudo zypper update
+
