@@ -31,3 +31,21 @@ Date: 10 Oct 2022, danielsilveiracoelho@ua.pt
 ** sudo zypper refresh
 ** sudo zypper update
 
+Date: 10 Oct 2022, danielsilveiracoelho@ua.pt
+-----------------------------
+
+* Due to the problem described in issue #7, I updated the nvidia drivers following the instructions of https://en.opensuse.org/SDB:NVIDIA_drivers 
+** zypper addrepo --refresh 'https://download.nvidia.com/opensuse/leap/$releasever' NVIDIA
+** zypper in x11-video-nvidiaG05
+** zypper in nvidia-glG05
+
+Date: 11 Oct 2022, danielsilveiracoelho@ua.pt
+-----------------------------
+
+* Due to problems running carla docker container (issue #8), I had to add more permissions to gpu devices (https://github.com/NVIDIA/nvidia-docker/issues/657)
+** sudo sed -i 's/660/666/g' /etc/modprobe.d/50-nvidia-default.conf
+** sudo /sbin/mkinitrd
+
+
+
+
