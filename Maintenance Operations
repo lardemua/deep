@@ -42,9 +42,32 @@ Date: 10 Oct 2022, danielsilveiracoelho@ua.pt
 Date: 11 Oct 2022, danielsilveiracoelho@ua.pt
 -----------------------------
 
-* Due to problems running carla docker container (issue #8), I had to add more permissions to gpu devices (https://github.com/NVIDIA/nvidia-docker/issues/657)
+* Due to problems running carla docker container (issue [#8](https://github.com/lardemua/deep/issues/8)), I had to add more permissions to gpu devices (https://github.com/NVIDIA/nvidia-docker/issues/657)
 ** sudo sed -i 's/660/666/g' /etc/modprobe.d/50-nvidia-default.conf
 ** sudo /sbin/mkinitrd
+
+Date: 8 Nov 2022, danielsilveiracoelho@ua.pt
+-----------------------------
+
+* Due to latency issues (issue [#8](https://github.com/lardemua/deep/issues/8)), I installed a USB-Ethernet adapter and configured the ethernet interface eth1 pasting the following lines into /etc/sysconfig/network/ifcfg-eth1:
+
+```
+NAME='eth1'
+BOOTPROTO='static'
+ONBOOT='yes'
+IPADDR='193.137.171.109/24'
+MTU='1500'
+STARTMODE='auto'
+GATEWAY=193.137.171.254   
+```
+
+* and the following line into /etc/sysconfig/network/ifroutes-eth1:
+
+```
+default 	193.137.171.254
+```
+
+
 
 
 

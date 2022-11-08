@@ -69,6 +69,27 @@ Tips:
 2. If the ethernet device of down, activate it with `ip link set eth0 up`.
 3. Check if the ethernet is correctly working with `ping google.pt` or `ping 1.1.1.1`.
 
+
+In addition to the `eth0`, there is also a secondary ethernet interface named `eth1`. This interface is intended for operations that require low latency and therefore a physical connection is recommended. For instance, to run CARLA server on DeepLar and CARLA client on the personal computer. The network configuration is the following:
+
+```
+NAME='eth1'
+BOOTPROTO='static'
+ONBOOT='yes'
+IPADDR='193.137.171.109/24'
+MTU='1500'
+STARTMODE='auto'
+GATEWAY=193.137.171.254   
+```
+
+and the route is the following:
+
+```
+default 	193.137.171.254
+```
+
+
+
 ### System update
 
 Now that we have internet, we can update our system to the latest version. Run the command:
