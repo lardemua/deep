@@ -67,6 +67,14 @@ GATEWAY=193.137.171.254
 default 	193.137.171.254
 ```
 
+Date: 11 Nov 2022, danielsilveiracoelho@ua.pt
+-----------------------------
+
+* Add new user:
+** sudo useradd -m andre -c "Andre Cardoso"
+
+
+
 
 
 
