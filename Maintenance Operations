@@ -74,6 +74,14 @@ Date: 11 Nov 2022, danielsilveiracoelho@ua.pt
 ** sudo useradd -m andre -c "Andre Cardoso"
 
 
+Date: 16 Dec 2022, vitor@ua.pt
+------------------------------
+
+* Added new user for Gonçalo Ribeiro
+** sudo useradd -m gribeiro -c "Gonçalo Ribeiro"
+** edited /etc/group and added gribeiro to the groups: docker, video
+* reset the password to a temporary name the command:
+** sudo passwd gribeiro
 
 
 
