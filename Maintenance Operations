@@ -80,9 +80,23 @@ Date: 16 Dec 2022, vitor@ua.pt
 * Added new user for Gonçalo Ribeiro
 ** sudo useradd -m gribeiro -c "Gonçalo Ribeiro"
 ** edited /etc/group and added gribeiro to the groups: docker, video
-* reset the password to a temporary name the command:
+* reset the password to a temporary name with the command:
 ** sudo passwd gribeiro
 
+Date: 29 Dec 2022
+-----------------
+
+* Added new user for Afonso Castro
+** sudo useradd -m acastro -c "Afonso Castro"
+** edited /etc/group and added acastro to several groups: docker, video
+* reset the password to a temporary name with the command:
+** sudo passwd acastro
+
+* Added new user for Joel Baptista
+** sudo useradd -m jbaptista -c "Joel Baptista"
+** edited /etc/group and added jbaptista to several groups: docker, video
+* reset the password to a temporary name with the command:
+** sudo passwd jbaptista
 
 
 
