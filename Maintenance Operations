@@ -99,6 +99,21 @@ Date: 29 Dec 2022
 ** sudo passwd jbaptista
 
 
+Date: 1 Fev 2023
+----------------
 
+* Added new user for João Alves
+** sudo useradd -m joaoalves -c "Joao Alves"
+** edited /etc/group and added joaoalves to several groups: docker, video
+* reset the password to a temporary name with the command:
+**sudo passwd joaoalves
 
+Date: 16 Jun 2023
+-----------------
+
+*Added new user for Pedro Amaral
+** sudo useradd -m pedroamaral -c "Pedro Amaral"
+** edited /etc/group and added pedroamaral to several groups: docker, video
+* reset the password to a temporary name with the command:
+** sudo passwd pedroamaral
 
